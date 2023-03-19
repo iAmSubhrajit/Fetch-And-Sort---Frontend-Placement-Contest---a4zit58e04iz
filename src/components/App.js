@@ -17,7 +17,7 @@ const App = () => {
       })
       .catch(err => console.log(err))
   }
-  const handleSorting = async () => {
+  const handleSorting = () => {
 
     if (sortAscending) {
       setUsers([...users].sort((a, b) => a.name.length - b.name.length));
